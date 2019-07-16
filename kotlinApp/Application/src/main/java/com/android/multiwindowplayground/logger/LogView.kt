@@ -22,7 +22,7 @@ import android.content.Context
 /**
  * Simple TextView which is used to output log data received through the LogNode interface.
  */
-class LogView(context: Context) : android.support.v7.widget.AppCompatTextView(context), LogNode {
+class LogView(context: Context) : androidx.appcompat.widget.AppCompatTextView(context), LogNode {
 
     // The next LogNode in the chain.
     private var next: LogNode? = null

@@ -18,8 +18,8 @@ package com.android.multiwindowplayground.logger
 
 import android.graphics.Typeface
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.Gravity
@@ -34,7 +34,7 @@ import android.widget.ScrollView
  * Simple fragment which contains a [LogView] and is used to output log data it receives through the
  * [LogNode] interface.
  */
-class LogFragment : Fragment() {
+class LogFragment : androidx.fragment.app.Fragment() {
 
     internal lateinit var logView: LogView
     private lateinit var scrollView: ScrollView
@@ -50,7 +50,7 @@ class LogFragment : Fragment() {
         val scale = resources.displayMetrics.density.toDouble()
         val paddingPixels = (paddingDips * scale + .5).toInt()
 
-        logView = LogView(activity as FragmentActivity).apply {
+        logView = LogView(activity as androidx.fragment.app.FragmentActivity).apply {
             setTextAppearance(android.R.style.TextAppearance_Material_Medium)
             layoutParams = logParams
             isClickable = true

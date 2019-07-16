@@ -19,9 +19,9 @@ package com.android.multiwindowplayground.activities
 import android.content.res.Configuration
 import android.os.Bundle
 import android.os.PersistableBundle
-import android.support.annotation.ColorRes
-import android.support.annotation.StringRes
-import android.support.v7.app.AppCompatActivity
+import androidx.annotation.ColorRes
+import androidx.annotation.StringRes
+import androidx.appcompat.app.AppCompatActivity
 import android.view.View
 import android.widget.TextView
 import com.android.multiwindowplayground.R
